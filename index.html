@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishabh Singh - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
+        <div class="profile">
+            <img src="your-image.jpg" alt="Rishabh Singh" class="profile-img">
+        </div>
         <h1>Rishabh Singh</h1>
         <p>+91 9354384477 | <a href="mailto:your-email@example.com">Email</a> | 
            <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
@@ -20,6 +24,19 @@
     <section id="summary">
         <h2>Summary</h2>
         <p>Full stack software developer with expertise in front-end and back-end development, experienced in leading cross-functional teams.</p>
+    </section>
+
+    <section id="image-slider">
+        <h2>Image Slider</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="image1.jpg" alt="Project 1" class="slide active">
+                <img src="image2.jpg" alt="Project 2" class="slide">
+                <img src="image3.jpg" alt="Project 3" class="slide">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
     </section>
 
     <section id="technical-skills">
@@ -55,5 +72,32 @@
     <footer>
         <p>&copy; 2024 Rishabh Singh</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function changeSlide(n) {
+            let slides = document.getElementsByClassName("slide");
+            slideIndex += n;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            if (slideIndex < 1) {slideIndex = slides.length}
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex - 1].style.display = "block";  
+        }
+    </script>
 </body>
 </html>
