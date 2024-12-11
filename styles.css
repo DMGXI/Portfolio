@@ -1,79 +1,5 @@
 @charset "UTF-8";
-
-/* =================================================================== 
- * Hudson Main Stylesheet
- * Template Ver. 1.0.0
- * 04-03-2023
- * ------------------------------------------------------------------
- *
- * TOC:
- * # SETTINGS
- *      ## fonts 
- *      ## colors
- *      ## spacing and typescale
- *      ## grid variables
- * # CSS RESET
- * # GRID
- * # BASE SETUP
- * # UTILITY CLASSES
- * # TYPOGRAPHY 
- *      ## base type styles
- *      ## additional typography & helper classes
- *      ## lists
- *      ## media 
- *      ## spacing
- * # PRELOADER
- *      ## page loaded
- * # FORM 
- *      ## style placeholder text
- * # BUTTONS
- * # TABLE
- * # COMPONENTS
- *      ## pagination
- *      ## alert box 
- *      ## skillbars
- *      ## stats tabs
- * # PROJECT-WIDE SHARED STYLES
- *      ## section header
- *      ## social list
- *      ## swiper overrides
- *      ## glightbox overrides
- * # GRID-BASED LAYOUTS
- *      ## grid block
- *      ## list grid
- * # PAGE WRAP
- * # SITE HEADER
- *      ## logo
- *      ## main navigation
- *      ## mobile menu toggle
- * # INTRO
- *      ## intro content
- *      ## intro btn cv download
- *      ## intro social
- *      ## intro scroll down
- *      ## intro transitions
- * # ABOUT
- *      ## about blocks
- * # WORKS
- *      ## folio entries 
- *      ## testimonials
- * # NUMBERS
- * # FOOTER
- *      ## copyright
- *      ## go top
- *
- * ------------------------------------------------------------------ */
-
-
-/* ===================================================================
- * # SETTINGS
- *
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## fonts 
- * ------------------------------------------------------------------- */
+/*hey if you are here then you are a dev  or hacker !!! thanks  for visit--------- Rishabh Singh  */
 @import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
@@ -85,21 +11,15 @@
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
-/* ------------------------------------------------------------------- 
- * ## colors
- * ------------------------------------------------------------------- */
+
 :root {
 
-  /* color-1(#C73E1D)
-   * color-2(#2F352B)
-   * color-3(#1A1A1A)
-   */
+
     --color-1: hsla(12, 75%, 45%, 1);
     --color-2: hsla(96, 10%, 19%, 1);
     --color-3: hsla(0, 0%, 10%, 1);
 
-  /* theme color variations
-   */
+
     --color-1-lightest: hsla(12, 75%, 75%, 1);
     --color-1-lighter : hsla(12, 75%, 65%, 1);
     --color-1-light   : hsla(12, 75%, 55%, 1);
@@ -116,10 +36,7 @@
     --color-3-light: hsla(0, 0%, 16%, 1);
     --color-3-dark : hsla(0, 0%, 8%, 1);
 
-  /* feedback colors
-   * color-error(#ffd1d2), color-success(#c8e675), 
-   * color-info(#d7ecfb), color-notice(#fff099)
-   */
+
     --color-error          : hsla(359, 100%, 91%, 1);
     --color-success        : hsla(76, 69%, 68%, 1);
     --color-info           : hsla(205, 82%, 91%, 1);
@@ -129,11 +46,7 @@
     --color-info-content   : hsla(205, 32%, 31%, 1);
     --color-notice-content : hsla(51, 30%, 30%, 1);
 
-  /* neutrals
-   * generated using 
-   * Tint & Shade Generator 
-   * (https://maketintsandshades.com/)
-   */
+
     --color-black  : #000000;
     --color-gray-19: #181818;
     --color-gray-18: #2f302f;
@@ -197,22 +110,16 @@
     --border-radius: 5px;
 }
 
-/* ------------------------------------------------------------------- 
- * ## spacing and typescale
- * ------------------------------------------------------------------- */
+
 :root {
 
-  /* spacing
-   * base font size: 20px 
-   * vertical space unit : 32px
-   */
+
     --base-size     : 62.5%;
     --multiplier    : 1;
     --base-font-size: calc(2rem * var(--multiplier));
     --space         : calc(3.2rem * var(--multiplier));
 
-  /* vertical spacing 
-   */
+
     --vspace-0_125: calc(0.125 * var(--space));
     --vspace-0_25 : calc(0.25 * var(--space));
     --vspace-0_375: calc(0.375 * var(--space));
@@ -242,27 +149,7 @@
     --vspace-9_5  : calc(9.5 * var(--space));
     --vspace-10   : calc(10 * var(--space));
 
-  /* type scale
-   * ratio 1        :2 | base: 20px
-   * -------------------------------------------------------
-   *
-   * --text-huge-3    = (148.60px)
-   * --text-huge-2    = (123.83px)
-   * --text-huge-1    = (103.20px)
-   * --text-display-3 = (86.00px)
-   * --text-display-2 = (71.66px)
-   * --text-display-1 = (59.72px)
-   * --text-xxxl      = (49.77px)
-   * --text-xxl       = (41.47px)
-   * --text-xl        = (34.56px)
-   * --text-lg        = (28.80px)
-   * --text-md        = (24.00px)
-   * --text-size      = (20.00px) BASE
-   * --text-sm        = (16.67px)
-   * --text-xs        = (13.89px)
-   *
-   * ---------------------------------------------------------
-   */
+
     --text-scale-ratio: 1.2;
     --text-size       : var(--base-font-size);
     --text-xs         : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
@@ -279,27 +166,21 @@
     --text-huge-2     : calc(var(--text-huge-1) * var(--text-scale-ratio));
     --text-huge-3     : calc(var(--text-huge-2) * var(--text-scale-ratio));
 
-  /* default button height
-   */
+
     --vspace-btn: var(--vspace-1_75);
 }
 
-/* on mobile devices below 600px, change the value of '--multiplier' 
- * to adjust the values of base font size and vertical space unit.
- */
+
 @media screen and (max-width: 600px) {
     :root {
         --multiplier: .9375;
     }
 }
 
-/* ------------------------------------------------------------------- 
- * ## grid variables
- * ------------------------------------------------------------------- */
+
 :root {
 
-  /* widths for rows and containers
-   */
+  
     --width-sixteen-cols: 1760px;
     --width-default     : 1280px;
     --width-wide        : 1600px;
@@ -310,21 +191,18 @@
     --width-full        : 100%;
     --width-grid-max    : var(--width-default);
 
-  /* gutter
-   */
+ 
     --gutter: 2.6rem;
 }
 
-/* on large screen devices
- */
+
 @media screen and (max-width: 1000px) {
     :root {
         --gutter: 2.2rem;
     }
 }
 
-/* on small devices
- */
+
 @media screen and (max-width: 600px) {
     :root {
         --gutter: 1rem;
@@ -332,15 +210,7 @@
 }
 
 
-/* ====================================================================
- * # CSS RESET
- *
- *
- * --------------------------------------------------------------------
- * http://meyerweb.com/eric/tools/css/reset/ 
- * v2.0 | 20110126
- * License: none (public domain)
- * -------------------------------------------------------------------- */
+
 html,
 body,
 div,
